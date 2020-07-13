@@ -1,0 +1,23 @@
+.. _glossary:
+
+==================
+ Glossary of Terms
+==================
+
+.. glossary::
+    :sorted:
+    
+    version control system
+        A component of software configuration management, is a system responsible for the management of changes to documents, computer programs, large web sites, and other collections of information.
+    
+    repository
+        Also known as a repo, is a storage location for :term:`software package` and other related files. This will look like a project folder on your local system.
+    
+    software package
+        Files needed to build and run software. This can be ``python`` files, ``.bat`` scripts, etc.
+    
+    metadata
+        Data that provides information about other data. (i.e. title, author, file type, last accessed date, etc.)
+    
+    branch
+        A

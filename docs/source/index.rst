@@ -8,6 +8,8 @@
 .. toctree::
     :maxdepth: 2
 
+    contributing
+    changelog
 
 .. todolist::
 
@@ -17,3 +19,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+* :ref:`Glossary of terms <glossary>`
