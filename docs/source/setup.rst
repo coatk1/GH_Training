@@ -2,8 +2,30 @@
 Setup
 =====
 
+First, there are a few things needed before getting started with GitHub.
+
+Installation
+============
+* Anaconda
+* Git
+* Hub
+
+Or install Git Bash
+
+Anaconda
+--------
+Go to SC and install Anaconda.
+
+Open Anaconda Prompt (Command Line) and create an environment.
+
+::
+
+    conda activate base-env
+
 Authentication
 ==============
+
+
 
 Notifications
 =============

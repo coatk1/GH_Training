@@ -1,12 +1,12 @@
 .. _glossary:
 
 ==================
- Glossary of Terms
+Glossary of Terms
 ==================
 
 .. glossary::
     :sorted:
-    
+   
     version control system
         A component of software configuration management, is a system responsible for the management of changes to documents, computer programs, large web sites, and other collections of information.
 
