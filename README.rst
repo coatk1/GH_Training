@@ -42,7 +42,7 @@ How does Github solve this?
 
     **No duplicates**: GitHub will give you a error message if you try to load a file of the same name.
     
-    **Secure**: with GitHub has features such as a :term:`protected branch`, :term:`read access` and :term:`security log`. This can prevent unwanted access to files. You can also create a private :term:`repository` and give selected users access to the entire repo.
+    **Secure**: with GitHub has features such as a :term:`protected branch`, :term:`read access` and :term:`security log`. This can prevent unwanted access to files. You can also create a :term:`private repository`.
     
     **Index Searching**: in GitHub, you can search keywords or files in an entire :term:`repository` or all of GitHub public repositories.
 
