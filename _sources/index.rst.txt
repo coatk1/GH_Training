@@ -9,6 +9,8 @@
     :maxdepth: 2
 
     setup
+    examples
+    practice
     contributing
     changelog
 
@@ -18,6 +20,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 * :ref:`Glossary of terms <glossary>`
