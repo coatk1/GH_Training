@@ -1,12 +1,3 @@
 =====
 Setup
 =====
-
-Authentication
-==============
-
-Notifications
-=============
-
-Organizations
-=============

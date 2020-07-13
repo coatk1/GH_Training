@@ -97,17 +97,8 @@
     milestone
         A way to track the progress on groups of issues or pull requests in a repository.
 
-    origin
-        The default upstream repository. Most projects have at least one upstream project that they track. By default, origin is used for that purpose.
-
-    private repository
-        Private repositories are only visible to the repository owner and collaborators that the owner specified.
-
     protected branch
         Protected branches block several features of Git on a branch that a repository administrator chooses to protect. They can't be force pushed, deleted, have changes merged without required checks passing or required reviews approved, or have files uploaded to it from the GitHub web interface. A protected branch is usually the default branch.
-
-    public repository
-        A public repository can be viewed by anyone, including people who aren't GitHub users.
 
     pull
         Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date. See also fetch.
@@ -148,23 +139,15 @@
     security log
         A log that lists the last 50 actions or those performed within the last 90 days.
 
-    SSH key
-        SSH keys are a way to identify yourself to an online server, using an encrypted message. It's as if your computer has its own unique password to another service. GitHub uses SSH keys to securely transfer information to your computer.
 
-    Status checks
-        Status checks are external processes, such as continuous integration builds, which run for each commit you make in a repository.
 
-    upstream
-        When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream". Also called origin.
 
-    upstream branch
-        The default branch that is merged into the branch in question (or the branch in question is rebased onto). It is configured via branch.<name>.remote and branch.<name>.merge. If the upstream branch of A is origin/B sometimes we say "A is tracking origin/B".
 
-    watching notifications
-        A notification about activity in a repository a user has subscribed to.
 
-    write access
-        A permission level on a repository that allows the user to push, or write, changes to the repository.
+
+
+
+
 
 
 
