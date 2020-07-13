@@ -10,6 +10,7 @@
 
     setup
     examples
+    practice
     contributing
     changelog
 
