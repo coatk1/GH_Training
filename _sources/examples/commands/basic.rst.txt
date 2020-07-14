@@ -17,7 +17,7 @@ Create an issue
 * Name-test in headers
 * Fill in template
 * Click labels and select another label
-* Click projects and select project test
+* Click projects and select project
 * Click milestone and select class 1
 
 Clone Repo
@@ -123,9 +123,10 @@ On GitHub you show see your branch.
 
 Click open pull request.
 
-* Enter your issue number.
+* Name-test in headers
+* Fill in template
 * Click labels and select another label
-* Click projects and select project test
+* Click projects and select project
 * Click milestone and select class 1
 
 Click create pull request.
