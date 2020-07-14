@@ -1,10 +1,10 @@
-================================
-Organizations and Project Boards
-================================
+=============
+Organizations
+=============
 
 Create Organization
 ===================
-When you create a new organization from scratch, it doesn't have any repositories associated with it.
+When you create a new :term:`organization` from scratch, it doesn't have any repositories associated with it.
 
 Go to **Profile -> Settings -> Organizations -> New organization**
 
@@ -51,13 +51,13 @@ Go to **Profile -> Organizations (on bottom left) -> Settings -> Audit log**
 
 About teams
 ===========
-Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
+:term:`Teams` are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
 
 Organization owners and team maintainers can give teams admin, read, or write access to organization repositories. 
 Organization members can send a notification to an entire team by mentioning the team's name. 
 Organization members can also send a notification to an entire team by requesting a review from that team. 
 Organization members can request reviews from specific teams with read access to the repository where the pull request is opened. 
-Teams can be designated as owners of certain types or areas of code in a CODEOWNERS file.
+Teams can be designated as owners of certain types or areas of code in a :term:`CODEOWNERS` file.
 
 Team visibility
 ---------------
@@ -99,47 +99,3 @@ Go to **Profile -> Organizations (on bottom left) -> Teams -> Select Team -> Mem
 To Remove
 +++++++++
 Go to **Profile -> Organizations (on bottom left) -> Teams -> Select Team -> Members -> Select member -> Remove from team (from dropdown)**
-
-
-Project Boards
-==============
-Project boards on GitHub help you organize and prioritize your work. 
-You can create project boards for specific feature work, comprehensive roadmaps, or even release checklists. 
-With project boards, you have the flexibility to create customized workflows that suit your needs.
-
-Project boards are made up of issues, pull requests, and notes that are categorized as cards in columns of your choosing. You can drag and drop or use keyboard shortcuts to reorder cards within a column, move cards from column to column, and change the order of columns.
-
-Project board cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it. 
-You can view and make lightweight edits to issues and pull requests within your project board by clicking on the issue or pull request's title.
-
-You can create notes within columns to serve as task reminders, references to issues and pull requests from any repository on GitHub, or to add information related to the project board. 
-You can create a reference card for another project board by adding a link to a note. If the note isn't sufficient for your needs, you can convert it to an issue.
-
-Types of project boards:
-
-* User-owned project boards can contain issues and pull requests from any personal repository.
-* Organization-wide project boards can contain issues and pull requests from any repository that belongs to an organization.
-* Repository project boards are scoped to issues and pull requests within a single repository.
-
-Templates
----------
-You can use templates to quickly set up a new project board. 
-When you use a template to create a project board, your new board will include columns as well as cards with tips for using project boards. 
-You can also choose a template with automation already configured.
-
-* Basic kanban: Track your tasks with To do, In progress, and Done columns
-* Automated kanban: Cards automatically move between To do, In progress, and Done columns
-* Automated kanban with review: Cards automatically move between To do, In progress, and Done columns, with additional triggers for pull request review status
-* Bug triage: Triage and prioritize bugs with To do, High priority, Low priority, and Closed columns
-
-Create user-owned project board
--------------------------------
-Go to **Profile -> Projects -> New Project -> Template -> Link Repository -> Create Project**
-
-Create organization-wide project board
---------------------------------------
-Go to **Profile -> Organizations (on bottom left) -> Projects -> New Project -> Template -> Link Repository -> Create Project**
-
-Create repository project board
--------------------------------
-Go to **Repository -> Projects -> New Project -> Template -> Link Repository -> Create Project**

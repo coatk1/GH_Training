@@ -37,7 +37,7 @@ Glossary of Terms
     clone
         A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online.
 
-    code owner
+    codeowners
         A person who is designated as an owner of a portion of a repository's code. The code owner is automatically requested for review when someone opens a pull request (not in draft mode) that makes changes to code the code owner owns.
 
     collaborator
@@ -97,11 +97,17 @@ Glossary of Terms
     milestone
         A way to track the progress on groups of issues or pull requests in a repository.
 
+    organization
+        Organizations are a group of two or more users that typically mirror real-world organizations. They are administered by users and can contain both repositories and teams.
+
     origin
         The default upstream repository. Most projects have at least one upstream project that they track. By default, origin is used for that purpose.
 
     private repository
         Private repositories are only visible to the repository owner and collaborators that the owner specified.
+
+    project board
+        Boards within GitHub that are made up of issues, pull requests, and notes that are categorized as cards in columns.
 
     protected branch
         Protected branches block several features of Git on a branch that a repository administrator chooses to protect. They can't be force pushed, deleted, have changes merged without required checks passing or required reviews approved, or have files uploaded to it from the GitHub web interface. A protected branch is usually the default branch.
@@ -153,6 +159,9 @@ Glossary of Terms
 
     Status checks
         Status checks are external processes, such as continuous integration builds, which run for each commit you make in a repository.
+
+    teams
+        A group of organization members that reflect your company or group's structure with cascading access permissions and mentions.
 
     upstream
         When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream". Also called origin.
