@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cloning with SSH URLs (preferred) &mdash; GH_Training v0.1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Notifications" href="../../notifications.html" />
+    <link rel="prev" title="Cloning with HTTPS URLs" href="https.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> GH_Training
+          
+
+          
+            
+            <img src="../../_static/github-mark.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Setup</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Authentication</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="https.html">Cloning with HTTPS URLs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Cloning with SSH URLs (preferred)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#check-for-existing-keys">Check for existing keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generating-a-new-ssh-key">Generating a new SSH key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-ssh-key-to-ssh-agent">Add SSH key to ssh-agent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-ssh-key-to-github-account">Add SSH Key to GitHub account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-ssh-connection">Test SSH connection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../organizations.html">Organizations and Project Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../practice/practice.html">Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary of Terms</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GH_Training</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Setup</a> &raquo;</li>
+        
+          <li><a href="index.html">Authentication</a> &raquo;</li>
+        
+      <li>Cloning with SSH URLs (preferred)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/coatk1/GH_Training/blob/master/docs/source/setup/authentication/ssh.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cloning-with-ssh-urls-preferred">
+<h1>Cloning with SSH URLs (preferred)<a class="headerlink" href="#cloning-with-ssh-urls-preferred" title="Permalink to this headline">¶</a></h1>
+<p>SSH URLs provide access to a Git repository via SSH, a secure protocol. To use these URLs, you must generate an SSH keypair on your computer and add the public key to your GitHub account. For more information, see “Connecting to GitHub with SSH.”</p>
+<p>When you <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> to a remote repository using SSH URLs, you’ll be prompted for a password and must provide your SSH key passphrase.</p>
+<div class="section" id="check-for-existing-keys">
+<h2>Check for existing keys<a class="headerlink" href="#check-for-existing-keys" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+</pre></div>
+</div>
+<p>Check for a file ending in <code class="docutils literal notranslate"><span class="pre">.pub</span></code></p>
+<p>If it does not exist, then you must generate a new SSH key.</p>
+</div>
+<div class="section" id="generating-a-new-ssh-key">
+<h2>Generating a new SSH key<a class="headerlink" href="#generating-a-new-ssh-key" title="Permalink to this headline">¶</a></h2>
+<p>Paste below text and substitute your email.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+</pre></div>
+</div>
+<p>This creates a new ssh key, using the provided email as a label.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Generating</span> <span class="n">public</span><span class="o">/</span><span class="n">private</span> <span class="n">rsa</span> <span class="n">key</span> <span class="n">pair</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Enter</span> <span class="n">a</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">which</span> <span class="n">to</span> <span class="n">save</span> <span class="n">the</span> <span class="n">key</span> <span class="p">(</span><span class="o">/</span><span class="n">c</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">you</span><span class="o">/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_rsa</span><span class="p">):[</span><span class="n">Press</span> <span class="n">enter</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>When prompted for a passphrase, press Enter.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Enter</span> <span class="n">passphrase</span> <span class="p">(</span><span class="n">empty</span> <span class="k">for</span> <span class="n">no</span> <span class="n">passphrase</span><span class="p">):</span> <span class="p">[</span><span class="n">Press</span> <span class="n">enter</span><span class="p">]</span>
+<span class="o">&gt;</span> <span class="n">Enter</span> <span class="n">same</span> <span class="n">passphrase</span> <span class="n">again</span><span class="p">:</span> <span class="p">[</span><span class="n">Press</span> <span class="n">enter</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-ssh-key-to-ssh-agent">
+<h2>Add SSH key to ssh-agent<a class="headerlink" href="#add-ssh-key-to-ssh-agent" title="Permalink to this headline">¶</a></h2>
+<p>Start ssh-agent</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+&gt; Agent pid 59566
+</pre></div>
+</div>
+<p>Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh-add ~/.ssh/id_rsa
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-ssh-key-to-github-account">
+<h2>Add SSH Key to GitHub account<a class="headerlink" href="#add-ssh-key-to-github-account" title="Permalink to this headline">¶</a></h2>
+<p>Copy the SSH key to your clipboard.</p>
+<p>If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don’t add any newlines or whitespace.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+</pre></div>
+</div>
+<p>In GitHub, go to <strong>Settings -&gt; SSH and GPG keys -&gt; New SSH key</strong></p>
+<p>For Title, enter “GitHub”</p>
+<p>For key, paste your public key.</p>
+</div>
+<div class="section" id="test-ssh-connection">
+<h2>Test SSH connection<a class="headerlink" href="#test-ssh-connection" title="Permalink to this headline">¶</a></h2>
+<p>Enter the following in the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh -T git@github.com
+# Attempts to ssh to GitHub
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If any warnings pop up, enter “yes”</p>
+</div>
+<p>You should see this</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; Hi username! You&#39;ve successfully authenticated, but GitHub does not
+&gt; provide shell access.
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../notifications.html" class="btn btn-neutral float-right" title="Notifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="https.html" class="btn btn-neutral float-left" title="Cloning with HTTPS URLs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Corey Atkins
+      <span class="lastupdated">
+        Last updated on Jul 14, 2020.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

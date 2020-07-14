@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Organizations and Project Boards &mdash; GH_Training v0.1.0</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="examples/index.html" />
+    <link rel="prev" title="Notifications" href="notifications.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> GH_Training
+          
+
+          
+            
+            <img src="_static/github-mark.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup/index.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Organizations and Project Boards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-organization">Create Organization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#repository-permission-levels">Repository permission levels</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#permission-levels">Permission levels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-base-permissions">Setting base permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#accessing-the-audit-log">Accessing the audit log</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#about-teams">About teams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#team-visibility">Team visibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nested-teams">Nested teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-delete-a-team">Create/Delete a team</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#to-create">To create</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#to-delete">To delete</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#add-remove-members-to-a-team">Add/Remove members to a team</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#to-add">To Add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#to-remove">To Remove</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#project-boards">Project Boards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-user-owned-project-board">Create user-owned project board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-organization-wide-project-board">Create organization-wide project board</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-repository-project-board">Create repository project board</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice/practice.html">Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GH_Training</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Organizations and Project Boards</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/coatk1/GH_Training/blob/master/docs/source/organizations.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="organizations-and-project-boards">
+<h1>Organizations and Project Boards<a class="headerlink" href="#organizations-and-project-boards" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-organization">
+<h2>Create Organization<a class="headerlink" href="#create-organization" title="Permalink to this headline">¶</a></h2>
+<p>When you create a new organization from scratch, it doesn’t have any repositories associated with it.</p>
+<p>Go to <strong>Profile -&gt; Settings -&gt; Organizations -&gt; New organization</strong></p>
+<div class="section" id="repository-permission-levels">
+<h3>Repository permission levels<a class="headerlink" href="#repository-permission-levels" title="Permalink to this headline">¶</a></h3>
+<p>You can customize access to each repository in your organization with granular permission levels, giving people access to the features and tasks they need.</p>
+<p>People with admin permissions can manage individual and team access to an organization-owned repository.</p>
+<div class="section" id="permission-levels">
+<h4>Permission levels<a class="headerlink" href="#permission-levels" title="Permalink to this headline">¶</a></h4>
+<p>You can give organization members, outside collaborators, and teams of people different levels of access to repositories owned by an organization.
+Each permission level progressively increases access to a repository’s content and settings.
+Choose the level that best fits each person or team’s role in your project without giving people more access to the project than they need.</p>
+<p>From least access to most access, the permission levels for an organization repository are:</p>
+<ul class="simple">
+<li><p>Read: Recommended for non-code contributors who want to view or discuss your project</p></li>
+<li><p>Triage: Recommended for contributors who need to proactively manage issues and pull requests without write access</p></li>
+<li><p>Write: Recommended for contributors who actively push to your project</p></li>
+<li><p>Maintain: Recommended for project managers who need to manage the repository without access to sensitive or destructive actions</p></li>
+<li><p>Admin: Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository</p></li>
+</ul>
+</div>
+<div class="section" id="setting-base-permissions">
+<h4>Setting base permissions<a class="headerlink" href="#setting-base-permissions" title="Permalink to this headline">¶</a></h4>
+<p>You can set base permissions for the repositories that an organization owns.</p>
+<p>Organization owners can set base permissions for an organization.</p>
+<p>You can set base permissions that apply to all members of an organization when accessing any of the organization’s repositories. Base permissions do not apply to outside collaborators.</p>
+<p>By default, members of an organization will have Read permissions to the organization’s repositories.</p>
+<p>If someone with admin permissions to an organization’s repository grants a member a higher level of permission for the repository, the higher level of permission overrides the base permission.</p>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Settings -&gt; Member privileges</strong></p>
+</div>
+</div>
+<div class="section" id="accessing-the-audit-log">
+<h3>Accessing the audit log<a class="headerlink" href="#accessing-the-audit-log" title="Permalink to this headline">¶</a></h3>
+<p>The audit log lists actions performed within the last 90 days. Only owners can access an organization’s audit log.</p>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Settings -&gt; Audit log</strong></p>
+</div>
+</div>
+<div class="section" id="about-teams">
+<h2>About teams<a class="headerlink" href="#about-teams" title="Permalink to this headline">¶</a></h2>
+<p>Teams are groups of organization members that reflect your company or group’s structure with cascading access permissions and mentions.</p>
+<p>Organization owners and team maintainers can give teams admin, read, or write access to organization repositories.
+Organization members can send a notification to an entire team by mentioning the team’s name.
+Organization members can also send a notification to an entire team by requesting a review from that team.
+Organization members can request reviews from specific teams with read access to the repository where the pull request is opened.
+Teams can be designated as owners of certain types or areas of code in a CODEOWNERS file.</p>
+<div class="section" id="team-visibility">
+<h3>Team visibility<a class="headerlink" href="#team-visibility" title="Permalink to this headline">¶</a></h3>
+<p>Teams can be visible or secret:</p>
+<ul class="simple">
+<li><p>Visible teams can be viewed and &#64;mentioned by every organization member.</p></li>
+<li><p>Secret teams are only visible to the people on the team and people with owner permissions. They’re great for hiding teams with sensitive names or members, such as those used for working with external partners or clients. Secret teams cannot be nested under parent teams or have child teams.</p></li>
+</ul>
+</div>
+<div class="section" id="nested-teams">
+<h3>Nested teams<a class="headerlink" href="#nested-teams" title="Permalink to this headline">¶</a></h3>
+<p>You can reflect your group or company’s hierarchy within your GitHub organization with multiple levels of nested teams.
+A parent team can have multiple child teams, while each child team only has one parent team. You cannot nest secret teams.</p>
+<p>Child teams inherit the parent’s access permissions, simplifying permissions management for large groups.
+Members of child teams also receive notifications when the parent team is &#64;mentioned, simplifying communication with multiple groups of people.</p>
+<p>For example, if your team structure is <strong>Employees &gt; Engineering &gt; Application Engineering &gt; Identity</strong>, granting Engineering write access to a repository means Application Engineering and Identity also get that access.
+If you &#64;mention the Identity Team or any team at the bottom of the organization hierarchy, they’re the only ones who will receive a notification.</p>
+</div>
+<div class="section" id="create-delete-a-team">
+<h3>Create/Delete a team<a class="headerlink" href="#create-delete-a-team" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="to-create">
+<h4>To create<a class="headerlink" href="#to-create" title="Permalink to this headline">¶</a></h4>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Teams -&gt; New Team</strong></p>
+</div>
+<div class="section" id="to-delete">
+<h4>To delete<a class="headerlink" href="#to-delete" title="Permalink to this headline">¶</a></h4>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Teams -&gt; Select Team -&gt; Delete (from dropdown)</strong></p>
+</div>
+</div>
+<div class="section" id="add-remove-members-to-a-team">
+<h3>Add/Remove members to a team<a class="headerlink" href="#add-remove-members-to-a-team" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="to-add">
+<h4>To Add<a class="headerlink" href="#to-add" title="Permalink to this headline">¶</a></h4>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Teams -&gt; Select Team -&gt; Members -&gt; Add a member</strong></p>
+</div>
+<div class="section" id="to-remove">
+<h4>To Remove<a class="headerlink" href="#to-remove" title="Permalink to this headline">¶</a></h4>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Teams -&gt; Select Team -&gt; Members -&gt; Select member -&gt; Remove from team (from dropdown)</strong></p>
+</div>
+</div>
+</div>
+<div class="section" id="project-boards">
+<h2>Project Boards<a class="headerlink" href="#project-boards" title="Permalink to this headline">¶</a></h2>
+<p>Project boards on GitHub help you organize and prioritize your work.
+You can create project boards for specific feature work, comprehensive roadmaps, or even release checklists.
+With project boards, you have the flexibility to create customized workflows that suit your needs.</p>
+<p>Project boards are made up of issues, pull requests, and notes that are categorized as cards in columns of your choosing. You can drag and drop or use keyboard shortcuts to reorder cards within a column, move cards from column to column, and change the order of columns.</p>
+<p>Project board cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it.
+You can view and make lightweight edits to issues and pull requests within your project board by clicking on the issue or pull request’s title.</p>
+<p>You can create notes within columns to serve as task reminders, references to issues and pull requests from any repository on GitHub, or to add information related to the project board.
+You can create a reference card for another project board by adding a link to a note. If the note isn’t sufficient for your needs, you can convert it to an issue.</p>
+<p>Types of project boards:</p>
+<ul class="simple">
+<li><p>User-owned project boards can contain issues and pull requests from any personal repository.</p></li>
+<li><p>Organization-wide project boards can contain issues and pull requests from any repository that belongs to an organization.</p></li>
+<li><p>Repository project boards are scoped to issues and pull requests within a single repository.</p></li>
+</ul>
+<div class="section" id="templates">
+<h3>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
+<p>You can use templates to quickly set up a new project board.
+When you use a template to create a project board, your new board will include columns as well as cards with tips for using project boards.
+You can also choose a template with automation already configured.</p>
+<ul class="simple">
+<li><p>Basic kanban: Track your tasks with To do, In progress, and Done columns</p></li>
+<li><p>Automated kanban: Cards automatically move between To do, In progress, and Done columns</p></li>
+<li><p>Automated kanban with review: Cards automatically move between To do, In progress, and Done columns, with additional triggers for pull request review status</p></li>
+<li><p>Bug triage: Triage and prioritize bugs with To do, High priority, Low priority, and Closed columns</p></li>
+</ul>
+</div>
+<div class="section" id="create-user-owned-project-board">
+<h3>Create user-owned project board<a class="headerlink" href="#create-user-owned-project-board" title="Permalink to this headline">¶</a></h3>
+<p>Go to <strong>Profile -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
+</div>
+<div class="section" id="create-organization-wide-project-board">
+<h3>Create organization-wide project board<a class="headerlink" href="#create-organization-wide-project-board" title="Permalink to this headline">¶</a></h3>
+<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
+</div>
+<div class="section" id="create-repository-project-board">
+<h3>Create repository project board<a class="headerlink" href="#create-repository-project-board" title="Permalink to this headline">¶</a></h3>
+<p>Go to <strong>Repository -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="examples/index.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="notifications.html" class="btn btn-neutral float-left" title="Notifications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Corey Atkins
+      <span class="lastupdated">
+        Last updated on Jul 14, 2020.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
