@@ -8,11 +8,14 @@
 .. toctree::
     :maxdepth: 2
 
-    setup
-    examples
-    practice
+    setup/index
+    notifications
+    organizations
+    examples/index
+    practice/index
     contributing
     changelog
+    glossary
 
 .. todolist::
 
