@@ -3,6 +3,10 @@ reStructuredText
 ================
 GitHub also uses reStructuredText(.rst) files because it is easy-to-read, easy-to-write syntax for formatting plain text.
 
+.. note::
+
+    GitHub pages are in reStructuredText format.
+
 Inline
 ------
 

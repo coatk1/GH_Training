@@ -90,13 +90,24 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../format/index.html">Writing and formatting on GitHub</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Basic</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#labels">Labels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-an-issue">Create an issue</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-and-clone-repo">Create and Clone Repo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#issues-and-pull-requests">Issues and Pull Requests</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#searching">Searching</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#managing-files">Managing Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#github-pages">GitHub Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-an-issue">Create an issue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clone-repo">Clone Repo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git-commands">Git Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pull-from-remote">Pull from Remote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check-branch">Check Branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-feature-branch">Create a feature branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-an-edit">Make an edit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check-status">Check Status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-file-to-stage">Add file to stage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-a-commit">Make a commit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#push-commit-to-feature-branch">Push commit to feature branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check-tag">Check tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-tag">Add tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#push-tag">Push tag</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submit-a-pull-request">Submit a Pull Request</a></li>
 </ul>
 </li>
 </ul>
@@ -182,33 +193,120 @@
             
   <div class="section" id="basic">
 <h1>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="labels">
-<h2>Labels<a class="headerlink" href="#labels" title="Permalink to this headline">¶</a></h2>
+<div class="sidebar">
+<p class="sidebar-title">Labels</p>
 <p>GitHub labels are a way to identify a type of issue or pull request.</p>
+</div>
+<div class="section" id="searching">
+<h2>Searching<a class="headerlink" href="#searching" title="Permalink to this headline">¶</a></h2>
+<p>Search GH_Training in GitHub.</p>
 </div>
 <div class="section" id="create-an-issue">
 <h2>Create an issue<a class="headerlink" href="#create-an-issue" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Go to issues</p></li>
-<li><p>Select Get Started for an issue template</p></li>
-<li><p>Enter description in header</p></li>
+<li><p>Select First Issue</p></li>
+<li><p>Name-test in headers</p></li>
 <li><p>Fill in template</p></li>
+<li><p>Click labels and select another label</p></li>
+<li><p>Click projects and select project</p></li>
+<li><p>Click milestone and select class 1</p></li>
 </ul>
 </div>
-<div class="section" id="create-and-clone-repo">
-<h2>Create and Clone Repo<a class="headerlink" href="#create-and-clone-repo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="clone-repo">
+<h2>Clone Repo<a class="headerlink" href="#clone-repo" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">coatk1</span><span class="o">/</span><span class="n">GH_Training</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
 </div>
-<div class="section" id="issues-and-pull-requests">
-<h2>Issues and Pull Requests<a class="headerlink" href="#issues-and-pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>Then navigate to that repo.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">GH_Training</span>
+</pre></div>
 </div>
-<div class="section" id="searching">
-<h2>Searching<a class="headerlink" href="#searching" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="managing-files">
-<h2>Managing Files<a class="headerlink" href="#managing-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="git-commands">
+<h2>Git Commands<a class="headerlink" href="#git-commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pull-from-remote">
+<h3>Pull from Remote<a class="headerlink" href="#pull-from-remote" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span>
+</pre></div>
 </div>
-<div class="section" id="github-pages">
-<h2>GitHub Pages<a class="headerlink" href="#github-pages" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="check-branch">
+<h3>Check Branch<a class="headerlink" href="#check-branch" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-feature-branch">
+<h3>Create a feature branch<a class="headerlink" href="#create-a-feature-branch" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">coatk1</span><span class="o">/</span><span class="n">first</span><span class="o">-</span><span class="n">issue</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="make-an-edit">
+<h3>Make an edit<a class="headerlink" href="#make-an-edit" title="Permalink to this headline">¶</a></h3>
+<p>Edit examples/class_list.md</p>
+</div>
+<div class="section" id="check-status">
+<h3>Check Status<a class="headerlink" href="#check-status" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-file-to-stage">
+<h3>Add file to stage<a class="headerlink" href="#add-file-to-stage" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="make-a-commit">
+<h3>Make a commit<a class="headerlink" href="#make-a-commit" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;adding coatk1&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="push-commit-to-feature-branch">
+<h3>Push commit to feature branch<a class="headerlink" href="#push-commit-to-feature-branch" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">coatk1</span><span class="o">/</span><span class="n">first</span><span class="o">-</span><span class="n">issue</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-tag">
+<h3>Check tag<a class="headerlink" href="#check-tag" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">tag</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-tag">
+<h3>Add tag<a class="headerlink" href="#add-tag" title="Permalink to this headline">¶</a></h3>
+<p>Go up one in version.</p>
+<p>E.g.</p>
+<blockquote>
+<div><p>If tag is 0.1.0, then you add 0.2.0.</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">tag</span> <span class="o">-</span><span class="n">a</span> <span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;coatk1 version&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="push-tag">
+<h3>Push tag<a class="headerlink" href="#push-tag" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="o">--</span><span class="n">tags</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="submit-a-pull-request">
+<h2>Submit a Pull Request<a class="headerlink" href="#submit-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>On GitHub you show see your branch.</p>
+<p>Click open pull request.</p>
+<ul class="simple">
+<li><p>Name-test in headers</p></li>
+<li><p>Fill in template</p></li>
+<li><p>Click labels and select another label</p></li>
+<li><p>Click projects and select project</p></li>
+<li><p>Click milestone and select class 1</p></li>
+</ul>
+<p>Click create pull request.</p>
 </div>
 </div>
 
