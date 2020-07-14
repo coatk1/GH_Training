@@ -9,10 +9,12 @@
     :maxdepth: 2
 
     setup/index
-    notifications
-    organizations
     examples/index
     practice/index
+    notifications
+    organizations
+    projects
+    license
     contributing
     changelog
     glossary

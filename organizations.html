@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Organizations and Project Boards &mdash; GH_Training v0.1.0</title>
+  <title>Organizations &mdash; GH_Training v0.1.0</title>
   
 
   
@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="examples/index.html" />
+    <link rel="next" title="Project Boards" href="projects.html" />
     <link rel="prev" title="Notifications" href="notifications.html" /> 
 </head>
 
@@ -87,8 +87,17 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="setup/index.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/format/index.html">Writing and formatting on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/commands/basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html">Create and Clone Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html#using-git">Using Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html#issues-and-pull-requests">Issues and Pull Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html#searching">Searching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html#managing-files">Managing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/index.html#github-pages">GitHub Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practice/practice.html">Practice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Organizations and Project Boards</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Organizations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#create-organization">Create Organization</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#repository-permission-levels">Repository permission levels</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#permission-levels">Permission levels</a></li>
@@ -113,17 +122,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#project-boards">Project Boards</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-user-owned-project-board">Create user-owned project board</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-organization-wide-project-board">Create organization-wide project board</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-repository-project-board">Create repository project board</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="examples/examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="practice/practice.html">Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Project Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of Terms</a></li>
@@ -173,7 +175,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Organizations and Project Boards</li>
+      <li>Organizations</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -194,11 +196,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="organizations-and-project-boards">
-<h1>Organizations and Project Boards<a class="headerlink" href="#organizations-and-project-boards" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="organizations">
+<h1>Organizations<a class="headerlink" href="#organizations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="create-organization">
 <h2>Create Organization<a class="headerlink" href="#create-organization" title="Permalink to this headline">¶</a></h2>
-<p>When you create a new organization from scratch, it doesn’t have any repositories associated with it.</p>
+<p>When you create a new <a class="reference internal" href="glossary.html#term-organization"><span class="xref std std-term">organization</span></a> from scratch, it doesn’t have any repositories associated with it.</p>
 <p>Go to <strong>Profile -&gt; Settings -&gt; Organizations -&gt; New organization</strong></p>
 <div class="section" id="repository-permission-levels">
 <h3>Repository permission levels<a class="headerlink" href="#repository-permission-levels" title="Permalink to this headline">¶</a></h3>
@@ -236,12 +238,12 @@ Choose the level that best fits each person or team’s role in your project wit
 </div>
 <div class="section" id="about-teams">
 <h2>About teams<a class="headerlink" href="#about-teams" title="Permalink to this headline">¶</a></h2>
-<p>Teams are groups of organization members that reflect your company or group’s structure with cascading access permissions and mentions.</p>
+<p><a class="reference internal" href="glossary.html#term-teams"><span class="xref std std-term">Teams</span></a> are groups of organization members that reflect your company or group’s structure with cascading access permissions and mentions.</p>
 <p>Organization owners and team maintainers can give teams admin, read, or write access to organization repositories.
 Organization members can send a notification to an entire team by mentioning the team’s name.
 Organization members can also send a notification to an entire team by requesting a review from that team.
 Organization members can request reviews from specific teams with read access to the repository where the pull request is opened.
-Teams can be designated as owners of certain types or areas of code in a CODEOWNERS file.</p>
+Teams can be designated as owners of certain types or areas of code in a <a class="reference internal" href="glossary.html#term-codeowners"><span class="xref std std-term">CODEOWNERS</span></a> file.</p>
 <div class="section" id="team-visibility">
 <h3>Team visibility<a class="headerlink" href="#team-visibility" title="Permalink to this headline">¶</a></h3>
 <p>Teams can be visible or secret:</p>
@@ -282,47 +284,6 @@ If you &#64;mention the Identity Team or any team at the bottom of the organizat
 </div>
 </div>
 </div>
-<div class="section" id="project-boards">
-<h2>Project Boards<a class="headerlink" href="#project-boards" title="Permalink to this headline">¶</a></h2>
-<p>Project boards on GitHub help you organize and prioritize your work.
-You can create project boards for specific feature work, comprehensive roadmaps, or even release checklists.
-With project boards, you have the flexibility to create customized workflows that suit your needs.</p>
-<p>Project boards are made up of issues, pull requests, and notes that are categorized as cards in columns of your choosing. You can drag and drop or use keyboard shortcuts to reorder cards within a column, move cards from column to column, and change the order of columns.</p>
-<p>Project board cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it.
-You can view and make lightweight edits to issues and pull requests within your project board by clicking on the issue or pull request’s title.</p>
-<p>You can create notes within columns to serve as task reminders, references to issues and pull requests from any repository on GitHub, or to add information related to the project board.
-You can create a reference card for another project board by adding a link to a note. If the note isn’t sufficient for your needs, you can convert it to an issue.</p>
-<p>Types of project boards:</p>
-<ul class="simple">
-<li><p>User-owned project boards can contain issues and pull requests from any personal repository.</p></li>
-<li><p>Organization-wide project boards can contain issues and pull requests from any repository that belongs to an organization.</p></li>
-<li><p>Repository project boards are scoped to issues and pull requests within a single repository.</p></li>
-</ul>
-<div class="section" id="templates">
-<h3>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
-<p>You can use templates to quickly set up a new project board.
-When you use a template to create a project board, your new board will include columns as well as cards with tips for using project boards.
-You can also choose a template with automation already configured.</p>
-<ul class="simple">
-<li><p>Basic kanban: Track your tasks with To do, In progress, and Done columns</p></li>
-<li><p>Automated kanban: Cards automatically move between To do, In progress, and Done columns</p></li>
-<li><p>Automated kanban with review: Cards automatically move between To do, In progress, and Done columns, with additional triggers for pull request review status</p></li>
-<li><p>Bug triage: Triage and prioritize bugs with To do, High priority, Low priority, and Closed columns</p></li>
-</ul>
-</div>
-<div class="section" id="create-user-owned-project-board">
-<h3>Create user-owned project board<a class="headerlink" href="#create-user-owned-project-board" title="Permalink to this headline">¶</a></h3>
-<p>Go to <strong>Profile -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
-</div>
-<div class="section" id="create-organization-wide-project-board">
-<h3>Create organization-wide project board<a class="headerlink" href="#create-organization-wide-project-board" title="Permalink to this headline">¶</a></h3>
-<p>Go to <strong>Profile -&gt; Organizations (on bottom left) -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
-</div>
-<div class="section" id="create-repository-project-board">
-<h3>Create repository project board<a class="headerlink" href="#create-repository-project-board" title="Permalink to this headline">¶</a></h3>
-<p>Go to <strong>Repository -&gt; Projects -&gt; New Project -&gt; Template -&gt; Link Repository -&gt; Create Project</strong></p>
-</div>
-</div>
 </div>
 
 
@@ -333,7 +294,7 @@ You can also choose a template with automation already configured.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="examples/index.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="projects.html" class="btn btn-neutral float-right" title="Project Boards" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="notifications.html" class="btn btn-neutral float-left" title="Notifications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

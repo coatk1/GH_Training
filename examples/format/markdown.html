@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Cloning with HTTPS URLs &mdash; GH_Training v0.1.0</title>
+  <title>Markdown &mdash; GH_Training v0.1.0</title>
   
 
   
@@ -36,8 +36,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Cloning with SSH URLs (preferred)" href="ssh.html" />
-    <link rel="prev" title="Authentication" href="index.html" /> 
+    <link rel="next" title="reStructuredText" href="restructured_text.html" />
+    <link rel="prev" title="Writing and formatting on GitHub" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,23 +86,19 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Setup</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../install.html">Installation</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Authentication</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Cloning with HTTPS URLs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ssh.html">Cloning with SSH URLs (preferred)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup/index.html">Setup</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Writing and formatting on GitHub</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructured_text.html">reStructuredText</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/format/index.html">Writing and formatting on GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/commands/basic.html">Basic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Create and Clone Repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html#using-git">Using Git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html#issues-and-pull-requests">Issues and Pull Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html#searching">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html#managing-files">Managing Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html#github-pages">GitHub Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/basic.html">Basic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Create and Clone Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#using-git">Using Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#issues-and-pull-requests">Issues and Pull Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#searching">Searching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#managing-files">Managing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#github-pages">GitHub Pages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../practice/practice.html">Practice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../notifications.html">Notifications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../organizations.html">Organizations</a></li>
@@ -157,18 +153,18 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../index.html">Setup</a> &raquo;</li>
+          <li><a href="../index.html">Create and Clone Repo</a> &raquo;</li>
         
-          <li><a href="index.html">Authentication</a> &raquo;</li>
+          <li><a href="index.html">Writing and formatting on GitHub</a> &raquo;</li>
         
-      <li>Cloning with HTTPS URLs</li>
+      <li>Markdown</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/coatk1/GH_Training/blob/master/docs/source/setup/authentication/https.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/coatk1/GH_Training/blob/master/docs/source/examples/format/markdown.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -182,10 +178,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="cloning-with-https-urls">
-<h1>Cloning with HTTPS URLs<a class="headerlink" href="#cloning-with-https-urls" title="Permalink to this headline">¶</a></h1>
-<p>The <a class="reference external" href="https://">https://</a> clone URLs are available on all repositories, public and private. These URLs work even if you are behind a firewall or proxy.</p>
-<p>When you <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> to a remote repository using HTTPS URLs on the command line, Git will ask for your GitHub username and password. For enhanced security, we recommend using a personal access token (PAT) instead of a password. Treat your PAT just like a password and enter your PAT when prompted for a password.</p>
+  <div class="section" id="markdown">
+<h1>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
+<p>GitHub uses Markdown(.md) files because it is easy-to-read, easy-to-write syntax for formatting plain text.</p>
+<p>See markdown.md</p>
 </div>
 
 
@@ -196,10 +192,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ssh.html" class="btn btn-neutral float-right" title="Cloning with SSH URLs (preferred)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="restructured_text.html" class="btn btn-neutral float-right" title="reStructuredText" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Authentication" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Writing and formatting on GitHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
